@@ -13,18 +13,26 @@
             align-items: center;
             height: 100vh;
             background-color: black;
+            flex-direction: column;
         }
         img {
             max-width: 100%;
             height: auto;
         }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <img src="https://media.discordapp.net/attachments/1318080646173954058/1340360397428883527/Design_sem_nome_1.gif?ex=67b21365&is=67b0c1e5&hm=7c2951727798a963013aca6a9c27478ddc3ec8e9da09545f0daaecea158888bd&=&width=664&height=664" alt="GIF animado">
-    <audio autoplay loop controls>
-        <source src="https://cdn.discordapp.com/attachments/1318080646173954058/1340361216991690823/free-sound-effect.mp3?ex=67b21428&is=67b0c2a8&hm=bcf480d308e16fefa1aeb8cfea5e52b95f29f78e463167795a0c5ed780ed5aed&" type="audio/mpeg">
+    <audio loop>
+        <source src="https://cdn.discordapp.com/attachments/1318080646173954058/1340376731034456146/ifiknowthetruthiwillbekilled.mp3?ex=67b2229b&is=67b0d11b&hm=2a093422352772eab08ad0a2c7065bab2869376995cca7ed2b9d1d0d43b028e7&" type="audio/mpeg">
         Seu navegador não suporta o elemento de áudio.
     </audio>
+    <button onclick="document.querySelector('audio').play()">Play</button>
 </body>
 </html>
