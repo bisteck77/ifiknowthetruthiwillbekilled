@@ -16,7 +16,7 @@
             flex-direction: column;
         }
         img {
-            max-width: 100%;
+            max-width: 80%; /* Aumentei o tamanho da imagem para 80% da largura da tela */
             height: auto;
         }
         button {
@@ -24,6 +24,14 @@
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
+            background-color: black; /* Botão preto */
+            color: red; /* Texto vermelho */
+            border: 2px solid red; /* Borda vermelha */
+            border-radius: 5px; /* Cantos arredondados */
+        }
+        button:hover {
+            background-color: red; /* Fundo vermelho ao passar o mouse */
+            color: black; /* Texto preto ao passar o mouse */
         }
     </style>
 </head>
@@ -35,4 +43,4 @@
     </audio>
     <button onclick="document.querySelector('audio').play()">Play</button>
 </body>
-</html
+</html>
